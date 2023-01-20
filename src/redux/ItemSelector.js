@@ -5,9 +5,9 @@ export const getFilterContacts = ({contacts}) => {
     }
 
 
-const normalisedFilter = filter.toLocalLowerCase();
+const normalisedFilter = filter.toLocaleLowerCase();
 const filterContacts = items.filter(({name, number}) => {
-    const normalisedTitle = name.toLocalLowerCase();
+    const normalisedTitle = name.toLocaleLowerCase();
     const filterResult = normalisedTitle.includes(normalisedFilter) || number.includes(normalisedFilter);
     return filterResult;
 
