@@ -31,7 +31,7 @@ export default function PhoneBook()  {
 
   const isDuplicate=({ name, number }) =>{
     const result = contacts.find(
-      item => item.name === name && item.number === number
+      item => item.name === name || item.number === number
     );
     return result;
   };
