@@ -9,11 +9,12 @@ const itemsSlice = createSlice({
             reducer: (store, {payload}) => {
                 store.push(payload);
             },
-            prepare: data => {
+            prepare(name, number) {
                 return {
                     payload:{
-                        ...data,
                         id: nanoid(),
+                        name,
+                        number,
                     },
                 };
             },
