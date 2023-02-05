@@ -12,5 +12,5 @@ export const StyledFrendItem = styled.li`
 
 export const FriendDescription = styled.p`
   color: '#2a2a2a';
-  font-size: 24px;
+  font-size: 20px;
 `;
